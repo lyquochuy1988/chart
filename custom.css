@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.tooth-chart-section {
+    font-family: "Montserrat, sans-serif";
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 10.14px 20px 0 #00000029;
+    padding: 50px;
+    /* width: 100%; */
+    max-width: 1600px;
+    margin: auto;
+}
+
+.tooth-chart-section p {
+    margin-bottom: 8px;
+}
+
+.tooth-chart-section .tooth-heading {
+    width: 100%;
+    max-width: 550px;
+}
+
+.tooth-chart-section .tooth-heading h1 {
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.tooth-chart-section .tooth-heading p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #000000;
+}
+
+.tooth-chart-section .tooth-info {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 40px;
+
+}
+
+.tooth-chart-section .tooth-info .tooth-detail {
+    width: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.tooth-chart-section .tooth-info .tooth-img p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    color: #000000;
+}
+
+.tooth-chart-section .tooth-info .tooth-img .svg-img {
+    margin: 20px 0;
+}
+
+.tooth-detail .tooth-card {
+    padding: 15px 20px;
+    background: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-radius: 8px;
+}
+
+.tooth-detail .tooth-card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 32px;
+    margin: 0px;
+}
+
+.tooth-detail .tooth-cnt .tooth-po {
+    margin: 10px 0;
+}
+
+.tooth-detail .tooth-cnt .tooth-po p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #000000;
+}
+
+.tooth-detail span.card-sm-text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.tooth-detail .tooth-card .tooth-cnt .tooth-number {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 22px;
+}
+
+.tooth-detail .tooth-card .tooth-card-img .main-tooh {
+    width: auto;
+    height: auto;
+    padding: 15px 35px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0px 20px #0001;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.tooth-detail .tooth-feature-detail {
+    margin-top: 20px;
+}
+
+.tooth-detail .tooth-feature-detail p {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+.tooth-detail .tooth-feature-detail .feature-tooths {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.tooth-detail-outer {
+    width: 100%;
+    max-width: 805px;
+}
+
+.tooth-chart-section .tooth-info .tooth-img {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    max-width: 425px;
+    text-align: center;
+}
+
+.details_box~.details_box {
+    display: none;
+}
+
+path.teeth:hover {
+    fill: #B6D7FF;
+    stroke: #000BF1;
+    cursor: pointer;
+}
+
+.teeth_btn.active,
+.teeth_btn.active path,
+.teeth.active {
+    fill: #B6D7FF;
+    stroke: #000BF1;
+}
+
+@media (max-width:1199px) {
+    .tooth-detail .tooth-feature-detail {
+        margin-top: 30px;
+    }
+
+    .tooth-detail .tooth-feature-detail .feature-tooths {
+        margin-top: 30px;
+        row-gap: 20px;
+    }
+
+    .tooth-detail .tooth-feature-detail p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .tooth-detail .tooth-card h2 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width:992px) {
+    .tooth-chart-section .tooth-info {
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+}
+
+@media (max-width:767px) {
+    .tooth-chart-section .tooth-info {
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+}
+
+@media (max-width:499px) {
+    .tooth-detail .tooth-card {
+        flex-wrap: wrap;
+        row-gap: 30px;
+        flex-direction: column-reverse;
+    }
+}
+
+.tooth-detail .tooth-feature-detail .feature-tooths .tooth-po:first-child {
+    grid-column: 1/3;
+}
+
+g.teeth_number {
+    cursor: pointer;
+}
+
+/* #tooth_details_1 {
+    display: block !important;
+} */
+
+.tooth-detail-outer.active {
+    display: block !important;
+}
